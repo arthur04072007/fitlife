@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%22" rel= "stylesheet">
+
     <title>Document</title>
 </head>
-<body>
-    
+<body style="font-family: Poppins;">
+
     <a href="../index.html">Voltar</a>
 
      <nav>
@@ -27,7 +31,27 @@
             <h1>IMC</h1>
             <p>Em breve você poderá calcular seu IMC aqui.</p>
         </header>
+
+        <form action="">
+            <label for="weight-input">Peso (KG)</label>
+            <input type="number" placeholder="Ex.: 67" id="weight-input" required>
+
+            <label for="height-input">Altura (cm)</label>
+            <input type="number" placeholder="Ex.: 1.80" id="height-input" required 
+            step="any">
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div>
+            
+          <p>Seu IMC é:</p>
+          <h2>00.0</h2>
+          <p>Classificação</p>
+
+        </div>
+
     </section>
+
 </main>
 
 </body>
